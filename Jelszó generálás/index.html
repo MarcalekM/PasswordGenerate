@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: grey;
+        }
+        .container{
+            background-color: white;
+            max-width: 500px;
+            padding: 20px;
+            margin: auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Jelszó generátor</h2>
+        <label for="length">Milyen hosszú legyen a jelszó?</label>
+        <input type="number" id="length" value="12"><br>
+
+        <h3>Válassza ki milyen karaktereket tartalmazzon a jelszó</h3>
+        <label for="lowercase">Tartalmazzon kis betűket</label>
+        <input type="checkbox" id="lowercase" checked><br>
+
+        <label for="uppercase">Tartalmazzon nagy betűket</label>
+        <input type="checkbox" id="uppercase"><br>
+
+        <label for="numbers">Tartalmazzon számokat</label>
+        <input type="checkbox" id="numbers"><br>
+
+        <label for="symbols">Tartalmazzon karaktereket</label>
+        <input type="checkbox" id="symbols"><br>
+
+        <h3>Generálja le a jelszót</h3>
+        <button onclick="generate()">Jelszó generálása</button>
+        <p id="password"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
